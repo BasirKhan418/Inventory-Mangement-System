@@ -15,7 +15,7 @@ import os
 
 if __name__ == '__main__':
 
-    db = Database("products.db")
+    db = Database("dsawindow\products.db")
     def populate_list():
         product_list_listbox.delete(0, tk.END)
         for num, row in enumerate(db.fetch_all_rows()):
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     # get the dimensions of the screen, in pixels. The window is then positioned in the center of the screen by dividing these dimensions by 2 and subtracting half the width and height of the window.
     root.geometry('{}x{}+{}+{}'.format(width, height, x, y))
     root.columnconfigure(0, weight=1)
-    im = Image.open("images//icon.png")
+    im = Image.open("dsawindow/images//icon.png")
     icon = ImageTk.PhotoImage(im)
     # Set the window icon using the PhotoImage object
     root.wm_iconphoto(True, icon)

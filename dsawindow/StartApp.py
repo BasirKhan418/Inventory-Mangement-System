@@ -9,7 +9,7 @@ import time
 root = Tk()
 
 #creating image var
-image = PhotoImage(file='images\\first_screen1.png')
+image = PhotoImage(file='dsawindow\images\\first_screen1.png')
 #size of the window in pixels
 height = 450
 width = 600
@@ -46,7 +46,7 @@ def exit_window():
 
 def top():
     root.withdraw()
-    os.system("python productManager.py")
+    os.system("python dsawindow/productManager.py")
     root.destroy()
 i = 0
 
